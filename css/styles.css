@@ -95,16 +95,13 @@ a {
   list-style-type: none;
   padding-left: 0;
   padding-bottom: 0;
-  border: 1px dashed rebeccapurple;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .contact-list-item {
-  /*display: inline-block;*/
   padding-bottom: 0;
   margin-left: 40px;
-  text-align: center;
 }
 .contact-list-item:first-child {
   margin-left: 0;
@@ -114,29 +111,17 @@ a {
   color: var(--gray-color);
   font-weight: 500;
   font-size: 14px;
-}
-/*.mail-tel-list {
-  list-style-type: none;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
 }
-.mail-tel-list-item {
-  margin-left: 10px;
-}
-.mail-tel-list-item:first-child {
-  margin-left: 0;
-}*/
+
 .svg-envelope {
-  /*border: 1px dashed red;*/
-  width: 16px;
-  height: 12px;
   fill: currentColor;
+  margin-right: 10px;
 }
 .svg-smartphone {
-  /*border: 1px dashed red;*/
-  width: 10px;
-  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /*Head section*/
@@ -205,8 +190,6 @@ a {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  /* margin-left: auto;
-  margin-right: auto;*/
 }
 
 .group-title {
@@ -230,24 +213,18 @@ a {
   width: 270px;
   height: 120px;
   background-color: var(--gray-color-portfolio);
-  border: 1px dashed rebeccapurple;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
 /*What we do Section*/
-/*.our-work-gallery {
-  margin-left: auto;
-  margin-right: auto;
-}*/
 .subtitle-text {
   font-weight: 700;
   font-size: 36px;
   line-height: 85%;
   text-align: center;
   margin-bottom: 50px;
-  border: 1px dotted brown;
 }
 .gallery {
   list-style-type: none;
@@ -333,7 +310,8 @@ a {
   justify-content: center;
   align-items: center;
 }
-.customers-logo-item:hover {
+.customers-logo-item:hover,
+.customers-logo-item:focus {
   fill: var(--blue-color);
   border: 1px solid var(--blue-color);
 }
@@ -404,7 +382,8 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--white-color);
 }
-.social-list-item.social-footer-item:hover {
+.social-list-item.social-footer-item:hover,
+.social-list-item.social-footer-item:focus {
   background-color: var(--blue-color);
 }
 
@@ -464,6 +443,13 @@ address {
 .project-list-item {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
+}
+.project-list-item:hover,
+.project-list-item:focus {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-subtitle {
   color: var(--black-color);
